@@ -1,0 +1,20 @@
+{
+    "subnets": {
+    "app-subnet": {
+        "name": "app-nsg",
+        "rules": [
+        "aws-allow",
+        "gcp-allow"
+        ]
+    },
+
+    "db-subnet": {
+        "name": "db-nsg",
+        "rules": [
+        "aws-allow",
+        "gcp-allow"
+        ]
+    }
+}
+    
+}
