@@ -1,0 +1,40 @@
+{
+"aws-allow": {
+    "priority": 400,
+    "rule": {
+      "direction": "Inbound",
+      "protocol": "*",
+      "access": "Allow",
+      "source_port_range": "*",
+      "destination_port_ranges": [
+        "22"
+      ],
+      "source_address_prefixes": [
+        "10.0.0.10"
+      ],
+      "destination_address_prefixes": [
+        "10.0.0.20"
+      ]
+    }
+  },
+
+"gcp-allow": {
+    "priority": 400,
+    "rule": {
+      "direction": "Outbound",
+      "protocol": "*",
+      "access": "Allow",
+      "source_port_range": "*",
+      "destination_port_ranges": [
+        "22"
+      ],
+      "source_address_prefixes": [
+        "10.0.0.10"
+      ],
+      "destination_address_prefixes": [
+ 
+        "10.0.0.20"
+      ]
+    }
+  }
+}
